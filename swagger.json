@@ -1,0 +1,65 @@
+{
+    "swagger": "2.0",
+    "info": {
+      "version": "1.0.0",
+      "title": "Food Delivery API",
+      "description": "API Documentation for Food Delivery Application"
+    },
+    "basePath": "/",
+    "paths": {
+      "/calculatePrice": {
+        "post": {
+          "summary": "Calculate delivery price",
+          "parameters": [
+            {
+              "name": "body",
+              "in": "body",
+              "schema": {
+                "$ref": "#/definitions/CalculatePriceRequest"
+              },
+              "required": true
+            }
+          ],
+          "responses": {
+            "200": {
+              "description": "Successful operation",
+              "schema": {
+                "$ref": "#/definitions/CalculatePriceResponse"
+              }
+            },
+            "400": {
+              "description": "Invalid input"
+            }
+          }
+        }
+      }
+    },
+    "definitions": {
+      "CalculatePriceRequest": {
+        "type": "object",
+        "properties": {
+          "zone": {
+            "type": "string"
+          },
+          "organization_id": {
+            "type": "string"
+          },
+          "total_distance": {
+            "type": "number"
+          },
+          "item_type": {
+            "type": "string"
+          }
+        }
+      },
+      "CalculatePriceResponse": {
+        "type": "object",
+        "properties": {
+          "total_price": {
+            "type": "number"
+          }
+        }
+      }
+    }
+  }
+  
