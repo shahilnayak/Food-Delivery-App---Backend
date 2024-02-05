@@ -120,4 +120,6 @@ This application can be deployed on platforms like [Render](https://render.com/)
 
 Notion Doc Link: `https://orchid-heather-5ae.notion.site/Coding-Task-Backend-Development-for-a-Food-Delivery-App-40bc318c0cde42f9893ab8e26271be94?pvs=4`
 
+API Doc: `https://web.postman.co/workspace/My-Workspace~b570092a-e40b-4b9b-8641-0d0261009474/request/32381224-4d4c5243-76ca-4a5e-8089-35c506ff1c51`
+
 ![alt text](image.png)
